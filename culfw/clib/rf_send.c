@@ -55,7 +55,7 @@
 #endif
 
 uint16_t credit_10ms;
-int8_t i;
+int8_t i, j;
 
 #define TMUL(x) (x<<4)
 #define TDIV(x) (x>>4)
