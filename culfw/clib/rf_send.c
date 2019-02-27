@@ -55,6 +55,7 @@
 #endif
 
 uint16_t credit_10ms;
+int8_t i;
 
 #define TMUL(x) (x<<4)
 #define TDIV(x) (x>>4)
@@ -109,7 +110,6 @@ sendraw(uint8_t *msg, uint8_t sync, uint8_t nbyte, uint8_t bitoff,
   }
   credit_10ms -= sum;
   */
-  int8_t i;
   LED_ON();
 
 #if defined (HAS_IRRX) || defined (HAS_IRTX) || defined (HAS_I2CSLAVE) // Block IR_Reception
